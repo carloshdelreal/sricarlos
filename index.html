@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Pizza's Delicious</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -16,6 +16,27 @@
       h1{
         margin-top: 200px;
       }
+
+      @media (max-width: 600px) {
+        .facet_sidebar {
+          display: none;
+        }
+        .container{
+          background-color: lightgray;
+        }
+      }
+
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .flex-container > div {
+        width: 33.3%;
+        text-align: center;
+        
+      }
+
+
     </style>
 
     <!--
@@ -38,9 +59,9 @@
             
           <img id="header-img" src="https://i1.wp.com/www.sopitas.com/wp-content/uploads/2018/07/sillas-mesita-pizza.jpg" alt="pizza and chairs">
           <strong> Pizza's Delicious</strong>
-          <a class = "nav-link"  href="#feachures">Features</a>
-          <a class = "nav-link"  href="#howitworks">How it works</a>
-          <a class = "nav-link"  href="#pricing">Pricing</a>
+          <a class = "nav-link" href="#features">Features</a>
+          <a class = "nav-link" href="#howitworks">How it works</a>
+          <a class = "nav-link" href="#pricing">Pricing</a>
           
         </div>
       </nav>
@@ -51,12 +72,50 @@
     <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gteNtynSZ9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <!-- Form stuff -->
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <label><input type="email" placeholder="Enter your email address" required>
-        <input type="submit" id="submit"> Submit</label>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+
+      <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+      <input type="submit" id="submit">
 
     </form>
+
+    <div class="flex-container">
+      <div>
+        <h1>Features</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rem velit ea nisi hic corrupti. Magni, maiores eaque error ipsam itaque incidunt illo totam facilis. Dolore quod non repudiandae alias!</p>
+      </div>
+      <div>
+          <h1>How it works</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rem velit ea nisi hic corrupti. Magni, maiores eaque error ipsam itaque incidunt illo totam facilis. Dolore quod non repudiandae alias!</p>
+      </div>
+      <div>
+          <h1>Article 1</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur rem velit ea nisi hic corrupti. Magni, maiores eaque error ipsam itaque incidunt illo totam facilis. Dolore quod non repudiandae alias!</p>
+      </div>
+    </div>
     
-    <script  src="js/index.js"></script>
+  
+  <article id="features">
+    <h1>features</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, officia nam illo in eaque, libero vero provident omnis officiis facere alias eum et optio ducimus aspernatur? Nisi accusamus nesciunt iusto?</p>
+  </article>
+
+  <article id="howitworks">
+    <h1>features</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, officia nam illo in eaque, libero vero provident omnis officiis facere alias eum et optio ducimus aspernatur? Nisi accusamus nesciunt iusto?</p>
+  </article>
+  
+  <article id="pricing">
+    <h1>features</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, officia nam illo in eaque, libero vero provident omnis officiis facere alias eum et optio ducimus aspernatur? Nisi accusamus nesciunt iusto?</p>
+  </article>
+  
+
+  <script  src="js/index.js"></script>
   </body>
+
+  <footer>
+    <p>Powered by: Sricar & Carlos</p>
+  </footer>
+
 </html>
