@@ -13,6 +13,9 @@
       img{
         max-width: 200px;
       }
+      h1{
+        margin-top: 200px;
+      }
     </style>
 
     <!--
@@ -27,18 +30,31 @@
     - The freeCodeCamp Team
 
     -->
+    
+    <!-- header -->
     <header id="header">
-      <h1>Pizza's Delicious</h1>
-      <img id="header-img" src="https://i1.wp.com/www.sopitas.com/wp-content/uploads/2018/07/sillas-mesita-pizza.jpg" alt="pizza and chairs">
-      <nav id="nav-bar">
-        <a class = "nav-link"  href="#">Features</a>
-        <a class = "nav-link"  href="#">How it works</a>
-        <a class = "nav-link"  href="#">Pricing</a>
+      <nav id="nav-bar" class="navbar navbar-expand-md navbar-dark fixed-top shrink">
+        <div class="container">
+            
+          <img id="header-img" src="https://i1.wp.com/www.sopitas.com/wp-content/uploads/2018/07/sillas-mesita-pizza.jpg" alt="pizza and chairs">
+          <strong> Pizza's Delicious</strong>
+          <a class = "nav-link"  href="#feachures">Features</a>
+          <a class = "nav-link"  href="#howitworks">How it works</a>
+          <a class = "nav-link"  href="#pricing">Pricing</a>
+          
+        </div>
       </nav>
     </header>
-    <h1>
-      Hello World!
-    </h1>
+    
+    <!-- video -->
+    <h1>This is our video commercial</h1>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gteNtynSZ9s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Form stuff -->
+    <form id="form" action="">
+
+    </form>
+    
     <script  src="js/index.js"></script>
   </body>
 </html>
